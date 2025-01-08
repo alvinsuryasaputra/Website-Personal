@@ -1,0 +1,101 @@
+/* Animasi Fade-In untuk judul */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-out;
+  opacity: 1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  background: #112d4c;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+header .logo {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 70px;
+  height: auto;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+header nav ul li a:hover {
+  background-color: #007BFF;
+  color: white;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-grow: 1;
+  width: 100%;
+  padding: 2rem;
+}
+
+/* Gambar kecil di About Me */
+section#about img {
+  max-width: 120px;
+  border-radius: 50%;
+  margin-top: 1rem;
+}
+
+/* Gaya paragraf lebih rapi */
+section p {
+  text-align: justify;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #112d4c;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+}
